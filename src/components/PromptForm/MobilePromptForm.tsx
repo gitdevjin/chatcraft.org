@@ -150,7 +150,15 @@ function MobilePromptForm({
   };
 
   return (
-    <Box flex={1} w="100%" h="100%" my={1} px={2} py={1}>
+    <Box
+      flex={1}
+      w="100%"
+      h="100%"
+      my={1}
+      px={2}
+      py={1}
+      pb="calc(env(safe-area-inset-bottom) + 15px)"
+    >
       <chakra.form onSubmit={handlePromptSubmit} h="100%">
         <Flex alignItems="end" gap={2}>
           <OptionsButton
